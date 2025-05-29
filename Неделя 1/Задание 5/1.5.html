@@ -1,0 +1,139 @@
+<html>
+    <title>Царство</title>
+    <style>
+    h1 {
+        font-size: 50px;
+        text-align: center;
+        color: #2F4F4F;
+        margin-top: 20px;
+    }
+
+    h2 {
+        font-size: 40px;
+        color: #2F4F4F;
+        margin-top: 40px;
+        text-align: center;
+    }
+
+    p {
+        font-size: 20px;
+        line-height: 1.5;
+        margin: 20px auto;
+        max-width: 800px;
+    }
+
+    header, footer {
+        background-color: #2F4F4F;
+        color: white;
+        padding: 20px;
+        text-align: center;
+    }
+
+    nav a {
+        color: white;
+        font-size: 18px;
+        margin: 0 15px;
+        text-decoration: none;
+    }
+
+    nav a:hover {
+        text-decoration: underline;
+    }
+
+    img {
+        display: block;
+        margin: 20px auto;
+        border-radius: 10px;
+    }
+
+    table {
+        width: 90%;
+        margin: 40px auto;
+        border-collapse: collapse;
+        font-size: 20px;
+        background-color: #ffffff;
+        box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    th, td {
+        border: 2px solid #2F4F4F;
+        padding: 10px;
+        text-align: center;
+    }
+
+    th {
+        background-color: #2F4F4F;
+        color: white;
+    }
+    </style>
+        </head>
+    <body>
+        <header> <!---Шапка--->
+            <img src="https://avatars.mds.yandex.net/i?id=e7f74543c5f01c1786fac42b4729afe5_l-5910710-images-thumbs&n=13" alt="Логотип" width="100">
+            <nav>
+                <a href="#about">О сюжете</a>
+                <a href="#chacters">Персонажи</a>
+            </nav>
+        </header>
+        <main> <!---Основная часть--->
+            <h2 id="about">О чём это аниме?</h2>
+            <p>Сюжет основан на реальных исторических событиях древнего Китая, в третьем веке до нашей эры, в эпоху воюющих царств, когда Китай был раздроблен на небольшие государства, которые вели бесконечную и многовековую борьбу между собой. На границах государства Цинь подрастают сироты Синь и Пяо, чьих родителей забрала очередная война. Они каждый день тренировались на мечах, чтобы однажды осуществить свою заветную мечту — стать генералами поднебесной. Пяо поразительно похож на императора Цинь и его решают увезти во дворец, в качестве двойника, однако через месяц происходит дворцовый переворот и Пяо, приняв за царя смертельно ранят, он успевает добраться до Синя и перед смертью просит его добраться до бандитского городка, Синь исполняет его волю и встречает там самого молодого царя Ин Чжэна, потерявшего только что трон. Сначала Синь ненавидит Ин Чжэна из-за Пяо и решает убить, но позже, увидев прекрасную возможность к осуществлению мечты стать генералом, соглашается сопровождать его и помочь устроить дворцовый переворот.</p>
+
+
+            <h2 id ="chacters">Главные персонажи</h2>
+            <p><strong>Ли Синь </strong>— Главный герой истории, простолюдин, ещё в раннем детстве потерял родителей из-за очередной междоусобной войны.</p>
+            <p><strong>Ин Чжэн </strong>— Молодой правитель царства Цинь, сын предыдущего правителя Чжуансян-вана.</p>
+            <p><strong>Хэ Ляодяо</strong> — Последний представитель горного племени, маскируется под сову..</p>
+            <img src="https://avatars.mds.yandex.net/i?id=1ca74123afb0812e2b1daa009c6aff6d_l-4257750-images-thumbs&n=13" alt="Обложка Берсерка" width="500">
+            <img src="https://avatars.mds.yandex.net/i?id=3895b125fcae10040409bd66ceb341b3_l-7545599-images-thumbs&n=13" alt="Гатс" width="300">
+            <h2>Сезоны царство</h2>
+            <table>
+                <tr>
+                    <th>Сезоны</th>
+                    <th>Главы по манге</th>
+                    <th>Основные события</th>
+                </tr>
+                <tr>
+                    <td>1 сезон</td>
+                    <td>1-173</td>
+                    <td>Знакомство с Ли Синь </td>
+                </tr>
+                <tr>
+                    <td>2 сезон</td>
+                    <td>174-261</td>
+                    <td>сконцентрирован на войне с Вей</td>
+                </tr>
+                <tr>
+                    <td>3 сезон</td>
+                    <td>261-364</td>
+                    <td>посвящён вторжению царства Чу в Цинь</td>
+                </tr>
+                <tr>
+                    <td>4 сезоне</td>
+                    <td>364-403</td>
+                    <td>рассказывает о том, как на Цинь напали другие могущественные государства</td>
+                </tr>
+            </table>
+            <h2>Оставить отзыв</h2>
+            <form>
+                <label for="name">Ваше имя:</label><br>
+                <input type="text" id="name" name="name" required><br><br>
+                
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" required><br><br>
+                
+                <label for="review">Ваш отзыв:</label><br>
+                <textarea id="review" name="review" rows="5" cols="50" required></textarea><br><br>
+                
+                <input type="submit" value="Отправить">
+            </form>
+        </main>
+        <footer> <!---Подвал--->
+                <p>© 2067 Царство — лучшее аниме</p>
+                <p>Адрес: г. Мидланд, ул. Золотого века, 1</p>
+                <p>Телефон: +6 (666) 666-66-66</p>
+                <a href="https://vk.com/kingdom_2" target="_blank">
+                <img src="https://lh3.googleusercontent.com/d/1M_Epfhr1SIOm4OGGKfKwEOmpHBtPTzzB" alt="Логотип" width="100">
+        </footer>
+    </body>
+</html>

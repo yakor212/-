@@ -1,0 +1,142 @@
+<html>
+    <head>
+        <style>
+        header {
+            background: lightskyblue; 
+            display: flex;
+            align-items: flex-end;
+            padding: 10px 20px;
+            height: 80px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        }
+        
+        header img {
+            height: 50px;
+            margin-right: 15px;
+            margin-bottom: 5px;
+        }
+
+        header p {
+            font-family: "Arial";
+            font-size: 20px;
+            margin-bottom: 5px;
+        }
+        
+        nav {
+            background: #f0f0f0;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-around;
+            box-shadow: 0 2px 3px rgba(0,0,0,0.1);
+            border: 1px solid gray
+        }
+        
+        nav a {
+            font-family: "Arial";
+            font-size: 18px;
+            color: gray;
+            text-decoration: none;
+            padding: 5px 10px;
+        }
+        
+        nav a:hover {
+            color: #0066cc;
+        }
+        
+        main {
+            padding: 20px;
+        }
+        
+        main h1 {
+            font-size: 40px;
+            font-weight: bold;
+            color: purple;
+            text-align: center;
+            font-family: "Arial";
+            font-style: italic;
+        }
+
+        footer {
+            background-color: #8fddf2;
+            padding: 10px;
+        }
+
+        footer p {
+            background-color: white;
+            padding: 5px;
+            font-family: "Arial";
+            font-size: 20px;
+        }
+        form {
+            font-family: "Arial";
+        }
+
+        .rounded-box {
+            background-color: orangered;
+            border-radius: 15px;
+            padding: 20px;
+            display: block;
+            width: calc(100% - 40px);
+            margin: 20px 0;
+            font-family: Arial;
+            font-size: 25px;
+            line-height: 1.5;
+            text-align: left;
+            box-sizing: border-box;
+            color: white;
+        }
+        </style>
+    </head>
+    <body>
+        <header>
+            <img src="https://t4.ftcdn.net/jpg/05/36/46/59/360_F_536465997_A7Jug6J2CLDRVm9euPkqdiyXCHPWGRrw.jpg" alt="Логотип">
+            <p><b>Внимание! Сезонные скидки 40%</b> <a href="">Подробнее</a></p>
+        </header>
+        <nav>
+            <a href="#crackers">Продукция</a>
+            <a href="#how-to-buy">Как купить?</a>
+            <a href="#wholesale">Оптом</a>
+            <a href="#about">О компании</a>
+        </nav>
+        <main>
+            <h1>Fantastic Party</h1>
+
+            <div style="display: flex; flex-direction: column; align-items: center; font-family: Arial; font-size: 20px; margin: 20px auto; max-width: 800px;">
+                <form style="display: flex; align-items: center; gap: 10px;">
+                    <label for="city" style="margin: 30;">Выберите город для доставки: </label>
+                    <select id="city" name="city" style="padding: 5px; font-family: Arial; font-size: 16px;">
+                        <option value="Novosibirsk">Новосибирск</option>
+                        <option value="Barnaul">Барнаул</option>
+                        <option value="Biysk">Бийск</option>
+                    </select>
+                </form>
+            </div>
+
+            <div id="crackers" class="rounded-box">
+                <img src="https://avatars.mds.yandex.net/i?id=08257b67a8344196f1329031d8f3658990fd0708-11923513-images-thumbs&n=13" width="100">
+                <p>Хлопушки</p>
+            </div>
+
+            <div id="how-to-buy" class="rounded-box">
+                <img src="https://i.pinimg.com/originals/f0/de/97/f0de97b1be53878b3e1ed8c7512e85a9.jpg" width="100">
+                <p>Петарды</p>
+            </div>
+            
+            <div id="wholesale" class="rounded-box">
+                <img src="https://yt3.googleusercontent.com/ytc/AIdro_lZGQCAO3Cl43x8_-J4j6MPLOe3d2HXL6jSEcD-j59r0Q=s900-c-k-c0x00ffffff-no-rj" width="100">
+                <p>Фонтаны</p>
+            </div>
+
+            <div id="about" class="rounded-box">
+                <img src="https://avatars.mds.yandex.net/i?id=5a6cdf9d4f7b0b952292d049d0693f50aa640891-5210535-images-thumbs&n=13" width="100">
+                <p>Фестивальные шары</p>
+            </div>
+        </main>
+
+        <footer>
+            <p><b>Контакты</b></p>
+            <p>Адрес: Г. Звездный, пр-кт, Экспрериментальный, 21</p>
+            <p>Тел.: 2502-3716</p>
+        </footer>
+    </body>
+</html>
