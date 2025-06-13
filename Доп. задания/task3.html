@@ -1,0 +1,113 @@
+<html>
+    <head>
+        <style>
+            body {
+                margin: 0;
+                height: 100vh;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background: #222;
+                perspective: 1000px;
+            }
+            
+            .cube-container {
+                width: 200px;
+                height: 200px;
+                position: relative;
+                transform-style: preserve-3d;
+                animation: rotate 10s infinite linear;
+            }
+            
+            .cube {
+                width: 100%;
+                height: 100%;
+                position: relative;
+                transform-style: preserve-3d;
+            }
+            
+            .face {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                background: rgba(255, 255, 255, 0.9);
+                border: 2px solid #333;
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                grid-template-rows: repeat(3, 1fr);
+                gap: 2px;
+                padding: 2px;
+                box-sizing: border-box;
+            }
+            
+            .small-square {
+                background: #fff;
+                border: 1px solid #ccc;
+            }
+            
+            /* Цвета граней */
+            .front .small-square { background: #ff4136; }
+            .back .small-square { background: #0074d9; }
+            .right .small-square { background: #2ecc40; }
+            .left .small-square { background: #ffdc00; }
+            .top .small-square { background: #ffffff; }
+            .bottom .small-square { background: #ff851b; }
+            
+            /* Позиционирование граней */
+            .front { transform: translateZ(100px); }
+            .back { transform: rotateY(180deg) translateZ(100px); }
+            .right { transform: rotateY(90deg) translateZ(100px); }
+            .left { transform: rotateY(-90deg) translateZ(100px); }
+            .top { transform: rotateX(90deg) translateZ(100px); }
+            .bottom { transform: rotateX(-90deg) translateZ(100px); }
+            
+            /* Анимация вращения */
+            @keyframes rotate {
+                from { transform: rotateX(0) rotateY(0) rotateZ(0); }
+                to { transform: rotateX(360deg) rotateY(360deg) rotateZ(0); }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="cube-container">
+            <div class="cube">
+                <!-- Передняя грань -->
+                <div class="face front">
+                    <div class="small-square"></div><div class="small-square"></div><div class="small-square"></div>
+                    <div class="small-square"></div><div class="small-square"></div><div class="small-square"></div>
+                    <div class="small-square"></div><div class="small-square"></div><div class="small-square"></div>
+                </div>
+                <!-- Задняя грань -->
+                <div class="face back">
+                    <div class="small-square"></div><div class="small-square"></div><div class="small-square"></div>
+                    <div class="small-square"></div><div class="small-square"></div><div class="small-square"></div>
+                    <div class="small-square"></div><div class="small-square"></div><div class="small-square"></div>
+                </div>
+                <!-- Правая грань -->
+                <div class="face right">
+                    <div class="small-square"></div><div class="small-square"></div><div class="small-square"></div>
+                    <div class="small-square"></div><div class="small-square"></div><div class="small-square"></div>
+                    <div class="small-square"></div><div class="small-square"></div><div class="small-square"></div>
+                </div>
+                <!-- Левая грань -->
+                <div class="face left">
+                    <div class="small-square"></div><div class="small-square"></div><div class="small-square"></div>
+                    <div class="small-square"></div><div class="small-square"></div><div class="small-square"></div>
+                    <div class="small-square"></div><div class="small-square"></div><div class="small-square"></div>
+                </div>
+                <!-- Верхняя грань -->
+                <div class="face top">
+                    <div class="small-square"></div><div class="small-square"></div><div class="small-square"></div>
+                    <div class="small-square"></div><div class="small-square"></div><div class="small-square"></div>
+                    <div class="small-square"></div><div class="small-square"></div><div class="small-square"></div>
+                </div>
+                <!-- Нижняя грань -->
+                <div class="face bottom">
+                    <div class="small-square"></div><div class="small-square"></div><div class="small-square"></div>
+                    <div class="small-square"></div><div class="small-square"></div><div class="small-square"></div>
+                    <div class="small-square"></div><div class="small-square"></div><div class="small-square"></div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

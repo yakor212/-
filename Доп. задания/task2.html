@@ -1,0 +1,148 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>UI-комплект</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                max-width: 600px;
+                margin: 20px auto;
+                padding: 20px;
+                background-color: #f9f9f9;
+                border-radius: 8px;
+                box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            }
+            h1 {
+                color: #333;
+                text-align: center;
+            }
+            .ui-group {
+                margin-bottom: 15px;
+            }
+            label {
+                display: block;
+                margin-bottom: 5px;
+                font-weight: bold;
+                color: #555;
+            }
+            input[type="text"],
+            input[type="date"],
+            input[type="range"],
+            select,
+            progress {
+                width: 100%;
+                padding: 8px;
+                margin-bottom: 10px;
+                border: 1px solid #ddd;
+                border-radius: 4px;
+                box-sizing: border-box;
+            }
+            input[type="checkbox"],
+            input[type="radio"] {
+                margin-right: 8px;
+            }
+            button {
+                background-color: #4CAF50;
+                color: white;
+                padding: 10px 15px;
+                border: none;
+                border-radius: 4px;
+                cursor: pointer;
+                font-size: 16px;
+            }
+            button:hover {
+                background-color: #45a049;
+            }
+            .checkbox-label,
+            .radio-label {
+                display: flex;
+                align-items: center;
+                margin-bottom: 8px;
+            }
+            progress {
+                height: 20px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>UI-комплект</h1>
+
+        <!-- Текстовое поле -->
+        <div class="ui-group">
+            <label for="text-field">Текстовое поле:</label>
+            <input type="text" id="text-field" placeholder="Введите текст">
+        </div>
+
+        <!-- Кнопка -->
+        <div class="ui-group">
+            <button id="submit-button">Отправить</button>
+        </div>
+
+        <!-- Выпадающий список -->
+        <div class="ui-group">
+            <label for="dropdown">Выпадающий список:</label>
+            <select id="dropdown">
+                <option value="option1">Опция 1</option>
+                <option value="option2">Опция 2</option>
+                <option value="option3">Опция 3</option>
+            </select>
+        </div>
+
+        <!-- Чекбокс -->
+        <div class="ui-group">
+            <label>Чекбокс:</label>
+            <div class="checkbox-label">
+                <input type="checkbox" id="checkbox1">
+                <label for="checkbox1">Выбрать</label>
+            </div>
+        </div>
+
+        <!-- Радиокнопка -->
+        <div class="ui-group">
+            <label>Радиокнопки:</label>
+            <div class="radio-label">
+                <input type="radio" id="radio1" name="radio-group">
+                <label for="radio1">Вариант 1</label>
+            </div>
+            <div class="radio-label">
+                <input type="radio" id="radio2" name="radio-group">
+                <label for="radio2">Вариант 2</label>
+            </div>
+        </div>
+
+        <!-- Метка с чекбоксом (inline) -->
+        <div class="ui-group">
+            <label class="checkbox-label">
+                <input type="checkbox" id="inline-checkbox">
+                <span>Метка с чекбоксом</span>
+            </label>
+        </div>
+
+        <!-- Метка с радиокнопкой (inline) -->
+        <div class="ui-group">
+            <label class="radio-label">
+                <input type="radio" id="inline-radio" name="inline-radio-group">
+                <span>Метка с радиокнопкой</span>
+            </label>
+        </div>
+
+        <!-- Выпадающий календарь -->
+        <div class="ui-group">
+            <label for="date-picker">Выберите дату:</label>
+            <input type="date" id="date-picker">
+        </div>
+
+        <!-- Диапазон (слайдер) -->
+        <div class="ui-group">
+            <label for="range-slider">Диапазон:</label>
+            <input type="range" id="range-slider" min="0" max="100" value="50">
+        </div>
+
+        <!-- Прогресс-бар -->
+        <div class="ui-group">
+            <label for="progress-bar">Прогресс-бар:</label>
+            <progress id="progress-bar" value="75" max="100"></progress>
+        </div>
+    </body>
+</html>
